@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe Game</title>
+  <link href="http://fonts.googleapis.com/css?family=Lato:300|Grand+Hotel" rel="stylesheet" type="text/css" />
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <!--Choose the token-->
+<center class="startbtn">
+	<h2>Choose your token</h2>
+	<button class="btn btn-primary btn-lg xtoken"><i class="fa fa-times fa-2x" aria-hidden="true"></i></button>
+	<button class="btn btn-primary btn-lg otoken">
+	<span class="fa-stack fa-2x moveup">
+    	<i class="fa fa-circle-o fa-stack-1x"></i>
+	</span>
+    </button>
+</center>
+<!--Whos Playing-->
+<p class="text-center play">It's <span class="turn">your</span> turn</p>
+<h1 class="text-center result"></h1>
+<!--Our Tic Tac Toe-->
+<div class="container-fluid play">
+	<div class="square">
+
+        <div id="tl" class="col-xs-4"><hr class="top-horizontal"><hr class="left-vertical"><span>&nbsp;</span></div>
+        <div id="tm" class="col-xs-4"><hr class="middle-vertical"><span>&nbsp;</span></div>
+		<div id="tr" class="col-xs-4"><hr class="right-vertical"><span>&nbsp;</span></div>
+
+		<div id="cl" class="col-xs-4"><hr class="middle-horizontal"><span>&nbsp;</span></div>
+		<div id="cm" class="col-xs-4"><hr class="left-diagonal"><hr class="right-diagonal"><span>&nbsp;</span></div>
+		<div id="cr" class="col-xs-4"><span>&nbsp;</span></div>
+
+		<div id="bl" class="col-xs-4"><hr class="bottom-horizontal"><span>&nbsp;</span></div>
+		<div id="bm" class="col-xs-4"><span>&nbsp;</span></div>
+		<div id="br" class="col-xs-4"><span>&nbsp;</span></div>
+
+	</div>
+						
+</div>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
